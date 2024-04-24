@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica Neue, sans-serif;
+	background-color: #1F2937;
+	color: #D5D4D8;
+}
+
+.hero {
+	margin-left: 50px;
+}
+
+.generate {
+	margin-top: 150px;
+	margin-left: 50px;
+}
+
+h1 {
+	color: #D5D4D8;
+	font-size: 40px;
+}
+
+.line {
+	height: 2px;
+	background-color: #10B981;
+	width: 100%;
+	margin-top: -10px;
+}
+
+.firstline {
+	font-size: 30px;
+	color: white;
+	margin-bottom: -10px;
+}
+
+.secondline {
+	font-size: 30px;
+	color: #4ADF86;
+	margin: 0px 0px;
+}
+
+button {
+	border: none;
+	background-color: #10B981;
+    font-family: Helvetica Neue, sans-serif;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #0e9467;
+}
+
+hr {
+	border: none;
+	height: 2px;
+	width: 100%;
+	background-color: #2F3E53;
+	margin: 30px 0;
+}
+
+.wrapper {
+	margin-top: 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center; 
+	padding: 20px 0;
+	gap: 10px;
+}
+
+.item, button {
+	height: 37px;
+	padding: 8px 16px;
+	font-size: 14px;
+	line-height: 17px;
+	vertical-align: middle;
+	border-radius: 4px;
+}
+
+.item {
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    width: 250px; /* Fixed width */
+    padding: 8px 16px;
+    margin: 0; 
+    background-color: #273549;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 300;
+    color: #D5D4D8;
+    display: inline-block; 
+    overflow: hidden; /* Prevents content from overflowing */
+    text-overflow: ellipsis; /* Adds an ellipsis (...) if text overflows */
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+}
+
+.copy-btn {
+    background-color: transparent;
+    border: none;
+    color: #D5D4D8;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 5px;
+    vertical-align: middle;
+}
+
+.copy-btn:hover {
+    color: #ffffff;
+}
+
+#copy-notification {
+    font-family: Helvetica Neue, sans-serif;
+    display: none; /* Initially hidden */
+    position: fixed; /* Stays in place on the screen */
+    bottom: 20px; /* Positioned at the bottom of the page */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Precise horizontal centering */
+    background-color: #273549; /* Visible color */
+    color: #D5D4D8; /* Text color */
+    padding: 10px; /* Padding for aesthetic spacing */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Readable text size */
+    z-index: 1000; /* Makes sure it's on top of other elements */
+}

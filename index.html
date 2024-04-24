@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>LockLaunchr</title>
+	</head>
+
+	<body>
+		
+		<div class="hero">
+			<h1>LockLaunchr</h1>
+			<!-- <div class="line"></div> -->
+			<hr>
+		</div>
+
+		<div class="generate">
+			<h2 class="firstline">Generate a</h2>
+			<h2 class="secondline">random password</h2>
+			<p>Only strong password vibes here ✌️</p>
+			
+			<div class="wrapper">
+			    <button onclick="startProcess()">Generate passwords</button>
+			    <p class="item" id="result-1"></p><button onclick="copyToClipboard('result-1')" class="copy-btn">📋</button>
+			    <p class="item" id="result-2"></p><button onclick="copyToClipboard('result-2')" class="copy-btn">📋</button>
+			</div>
+
+			<div id="copy-notification" style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: #4ADF86; color: white; padding: 10px; border-radius: 4px; font-size: 14px; z-index: 1000;">
+			    Password copied to clipboard!
+			</div>
+
+		</div>
+		
+		<script type="text/javascript" src="index.js"></script>
+
+	</body>
+
+</html>
